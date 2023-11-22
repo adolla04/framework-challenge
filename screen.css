@@ -41,7 +41,8 @@ img {
 
 fieldset {
     margin-top: 20px;
-    border: solid 1px #242424;
+    padding: 20px;
+    border: solid 2px #ccc;
 }
 
 legend {
@@ -54,4 +55,17 @@ Label {
 
 button {
     width: 100px;
+}
+
+Label .block {
+    margin: 0;
+    display: block;
+}
+
+div .container {
+    margin: 0;
+}
+
+label .radio-inline {
+    margin: 10px;
 }

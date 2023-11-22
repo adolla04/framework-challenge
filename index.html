@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Framework</title>
-    <link rel="stylesheet" href="screen.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="screen.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -45,25 +45,64 @@
         </div>
       </div>
     </nav>
+
     <h1>Capital Prime - Feedback</h1>
     <section>
       <h3>Capital Prime Feedback Form</h3>
       <form>
         <fieldset>
           <legend>Feedback Form</legend>
-          <Label>Name:<br />
+          <p>Note: Participants of this form will be asked to rate their experience on a scale of 1-10, 1 being poor, and 10 being excellent. There will be an optional text box if you wish to elaborate on your answers. All feedback is greatly appreciated. We hope you dine again with us soon!</p>
+          <Label class="block">Name:<br />
             <input type="text">
           </Label>
-          <Label>Email address:<br />
+          <Label class="block">Email address:<br />
             <input type="text">
           </Label>
-          <Label>Reason for contact:
-            <select name="reasons" id="reasons" multiple>
-              <option value="saying hi">Saying hi</option>
-              <option value="looking for a contractor">Looking for a contractor</option>
-              <option value="interested in an interview">Interested in an interview</option>
-            </select>
+          <Label class="block">1. How would you rate your overall dining experience at Capital Prime?<br />
+            <input type="radio" id="opt1" name="rating" value="1">
+            <label for="opt1">Very Unsatisfactory
+            </label><br>
+            <input type="radio" id="opt2" name="rating" value="2">
+            <label for="opt2">Somewhat unsatisfactory
+            </label><br>  
+            <input type="radio" id="opt3" name="rating" value="3">
+            <label for="opt3">Average</label><br>
+            <input type="radio" id="opt4" name="rating" value="4">
+            <label for="opt2">Satisfactory
+            </label><br>  
+            <input type="radio" id="opt5" name="rating" value="5">
+            <label for="opt3">Extremely satisfactory</label><br><br>
           </Label>
+          <label>2. How likely are you to recommend Capital Prime to others?<br />
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Unlikely</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Moderately likely</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Very likely</label>
+            </div>
+          </label>
+          <label>3. How would you rate the quality of the food?<br />
+            <div class="container">
+              <form>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" checked>Option 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Option 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Option 3
+                </label>
+              </form>
+            </div>
+          </label>
           <Label>Comments:
             <input type="text">
           </Label>
