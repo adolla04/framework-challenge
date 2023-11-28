@@ -69,3 +69,7 @@ div .container {
 label .radio-inline {
     margin: 10px;
 }
+
+input {
+    margin: 0.4rem;
+  }
